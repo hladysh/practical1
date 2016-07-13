@@ -1,0 +1,93 @@
+body {
+    background-color: #333;
+}
+
+.window {
+    width: 600px;
+    height: 500px;
+    border: 2px solid red;
+    margin: 0 auto;
+    padding: 12px 40px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #09349c;
+    position: relative;
+}
+
+.btn_wrap,
+.btn_done {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn_wrap button,
+.btn_done button {
+    border-radius: 15px;
+    background-color: blue;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn_done,
+.text_style_wrap,
+.text_redactor_wrap,
+.text_redactor,
+.table_content,
+.list_content,
+.btn_save_add,
+.add_table {
+    display: none;
+}
+
+.btn_wrap button:first-child,
+.btn_done button:first-child {
+    margin-right: 18px;
+}
+
+.btn_done {
+    position: absolute;
+    bottom: 50px;
+}
+
+.btn_wrap button:hover,
+.btn_done button:hover {
+    background-color: red;
+}
+
+.color_bgc,
+.color_text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.square_wrap {
+    height: 160px;
+    width: 160px;
+    float: right;
+    display: none;
+}
+
+.square {
+    border: 1px solid red;
+    float: left;
+    height: 50px;
+    margin: 0px;
+    width: 49px;
+}
+
+.window_first {
+    background-color: #333;
+    overflow-y: auto;
+}
+
+.table_content form {
+    clear: both;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.table_content form p,
+.list_content form p {
+    display: inline-block;
+}

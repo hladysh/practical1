@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title> Redactor </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="window" class="window window_first">
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur. </p>
+        </div>
+        <div class="btn_wrap">
+            <button class="btn_red " id="btn_edit">Редагувати</button>
+            <button class="btn_red " id="btn_style">Стилізувати</button>
+        </div>
+        <div class="window">
+            <div class="text_redactor_wrap">
+                <form name="text_redactor">
+                    <textarea name="redactor" cols="82" rows="25"></textarea>
+                </form>
+            </div>
+            <div class="text_style_wrap">
+                <form action="#" name="text_font_size">
+                    <p>Розмір тексту</p>
+                    <label><input type="radio" name="font1" value="16px">16px </label>
+                    <label><input type="radio" name="font1" value="20px">20px </label>
+                    <label><input type="radio" name="font1" value="24px">24px </label>
+                    <label><input type="radio" name="font1" value="28px">28px </label>
+                </form>
+                <form action="#" name="text_style_font"> Шрифт<br>
+                    <select>
+                        <option value="Verdana">Verdana</option> 
+                        <option value="Georgia">Georgia</option>
+                        <option value="Webdings">Webdings</option>
+                        <option value="Impact">Impact</option> 
+                    </select>
+                </form>
+                <button id="color_bgc1" class="color_bgc">Колір фону</button>
+                <button id="color_text" class="color_text">Колір тeксту</button>
+                <div class="square_wrap ">
+                    <div class="square square_red" style='background: red ; color: red;'></div>
+                    <div class="square square_blue " style='background: blue; color: blue;'></div>
+                    <div class="square square_brown" style='background: brown ; color: brown;'></div>
+                    <div class="square square_cyan " style='background: cyan ; color: cyan;'></div>
+                    <div class="square square_darkgreen" style='background: darkgreen ; color: darkgreen;'></div>
+                    <div class="square square_fuchsia " style='background: fuchsia ; color: fuchsia;'></div>
+                    <div class="square square_yellow  " style='background: yellow ; color: yellow;'></div>
+                    <div class="square square_orange " style='background: orange ; color: orange;'></div>
+                    <div class="square square_tomato " style='background: tomato ; color: tomato;'></div>
+                </div>
+                <form action="#" name="form_style">
+                    <label><input type="checkbox" name="style_text" value="Bold"/> Жирний тест</label>
+                    <label><input type="checkbox" name="style_text" value="italic"/> Курсивний тест</label>
+                </form>
+            </div>
+            <div class="btn_done">
+                <button class="btn_save">Зберегти</button>
+                <button class="btn_add">Додати</button>
+            </div>
+        </div>
+    </div>
+    <div class="add_table">
+        <div class="window">
+            <form action="#" name="table_add">
+                <label><input type="radio" name="radio" id="table">Додати таблицю</label>
+                <label><input type="radio" name="radio" id="list">Додати список</label>
+            </form>
+
+            <div class="table_content">
+                <form action="#" name="form_table_content">
+                    <p class="p_wrap">Ведіть кількість рядків таблиці</p>
+                    <input type="text" size="5" name="td" value="10"><br>
+                    <p>Ведіть кількість стовпців таблиці</p>
+                    <input type="text" size="5" name="tr" value="5"><br>
+                    <h3>Стилізуйте таблицю!</h3>
+
+                    <p>Ведіть ширину комірки таблиці</p>
+                    <input type="text" size="5" name="tw" value="15"><br>
+                    <p>Ведіть висоту комірки таблиці</p>
+                    <input type="text" size="5" name="th" value="10"><br>
+
+                    <p>Товщина</p>
+                    <input type="text" size="5" name="border" value="2">
+
+                    <p>Тип лінії</p>
+                    <select name="type">
+                        <option value="solid">solid</option> 
+                        <option value="dotted">dotted</option>
+                        <option value="Wdashed">dashed</option>
+                        <option value="inset">inset</option> 
+                    </select>
+                    <p>Колір лінії</p>
+                    <select name="color">
+                        <option value="black ">black</option> 
+                        <option value="blue">blue</option>
+                        <option value="tomato">tomato</option>
+                        <option value="yellow">yellow</option> 
+                    </select>
+                </form>
+            </div>
+            <div class="list_content">
+                <form action="#" name="list_content_content">
+                    <p>Введіть кількість елементів списку </p>
+                    <input type="text" size="5" name="numli" value="10"><br>
+
+                    <p>Маркування спику</p>
+                    <select name="type_list">
+                        <option value="disc ">disc</option> 
+                        <option value="circle">circle</option>
+                        <option value="square">square</option>
+                    </select><br>
+                    <button class="btn_save_list">Додати список</button>
+                </form>
+            </div>
+            <div class="btn_done_add">
+                <button class="btn_save_add">Додати таблицю </button> <br>
+                <button class="btn_close">Закрити</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
